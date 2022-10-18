@@ -10,4 +10,6 @@ build:
     forward:
       pipeline_variables: true
     include:
-    - remote: 'https://github.com/git-developer/solarview-base/raw/feature/buster/.gitlab-ci.yml'
+    - project: 'ckware/solarview-base'
+      ref:     'feature/buster'
+      file:    '.gitlab-ci.yml'
