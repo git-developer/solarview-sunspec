@@ -1,9 +1,13 @@
-include:
-  remote: 'https://github.com/git-developer/solarview-base/raw/feature/buster/.gitlab-ci.yml'
-
 variables:
   DOCKERFILE_URL: 'https://github.com/git-developer/solarview-base/raw/feature/buster/Dockerfile'
   BUILD_ARGS: 'APP_NAME=sunspec-fb RUNTIME_BASE_IMAGE'
   BUILD_CONTEXT: 'image'
   IMAGE_TITLE: 'SolarView Sunspec-Proxy'
   UPDATE_CHECK_URLS: 'http://www.solarview.info/downloads/sunspec-fb.zip'
+
+build:
+  trigger:
+    forward:
+      pipeline_variables: true
+    include:
+    - remote: 'https://github.com/git-developer/solarview-base/raw/feature/buster/.gitlab-ci.yml'
