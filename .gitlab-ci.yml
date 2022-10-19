@@ -1,7 +1,5 @@
 variables:
-  DOCKERFILE_URL: 'https://github.com/git-developer/solarview-base/raw/feature/buster/Dockerfile'
   BUILD_ARGS: 'APP_NAME=sunspec-fb RUNTIME_BASE_IMAGE'
-  BUILD_CONTEXT: 'image'
   IMAGE_TITLE: 'SolarView Sunspec-Proxy'
   UPDATE_CHECK_URLS: 'http://www.solarview.info/downloads/sunspec-fb.zip'
 
@@ -12,4 +10,4 @@ build:
     include:
     - project: 'ckware/solarview-base'
       ref:     'feature/buster'
-      file:    '.gitlab-ci.yml'
+      file:    'template.yml'
