@@ -1,8 +1,8 @@
 include:
-  remote: 'https://github.com/git-developer/solarview-base/raw/feature/oci-content-types/.gitlab-ci.yml'
+  remote: 'https://github.com/git-developer/solarview-base/raw/main/.gitlab-ci.yml'
 
 variables:
-  DOCKERFILE_URL: 'https://github.com/git-developer/solarview-base/raw/feature/oci-content-types/Dockerfile'
+  DOCKERFILE_URL: 'https://github.com/git-developer/solarview-base/raw/main/Dockerfile'
   BUILD_ARGS: 'APP_NAME=sunspec-fb'
   IMAGE_TITLE: 'SolarView Sunspec-Proxy'
   UPDATE_CHECK_URLS: 'http://www.solarview.info/downloads/sunspec-fb.zip'
